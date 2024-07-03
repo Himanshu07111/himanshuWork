@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Mumbai</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-LC+dw63Hzk1wbLyx4vBaN7NX9Qvvz7iWX1ya7emQr7LCk8txrBEW7I1EhnKIq1MBIeh5CezVsVj2t0drQ6aLtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap">
+  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="/css/manu.css">
+  <script type="module" src="/js/review.js"></script>
+  <link rel="stylesheet" href="/css/sidebar.css"> <!-- Add this line for your custom sidebar styles -->
+</head>
+
+<body>
+
+  <!-- Sidebar -->
+  <div id="sidebar"
+    class="hidden fixed top-18 right-0 h-full w-1/3 bg-gray-200 text-gray-800 shadow-lg overflow-y-auto transition-transform duration-300 transform translate-y-full z-50">
+    <div class="sidebar-header flex justify-between items-center px-4 py-2">
+      <h2 class="text-lg font-semibold">Your Cart</h2>
+      <button id="close-cart" class="focus:outline-none text-gray-500 hover:text-gray-800">
+        <i class="bx bx-x text-2xl"></i>
+      </button>
+    </div>
+    <div class="cart-content p-4">
+      <h1 class="text-2xl font-bold mb-4">Your Cart is Empty</h1>
+      <p class="text-gray-400">Try Again! and Add some delicious items to your cart! 🍕</p>
+    </div>
+  </div>
+
+  <header class="mb-8 relative z-10">
+    <a href="/Pizza.html" class="logo">Pizza Mumbai</a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navbar">
+      <li><a href="/Pizza.html">Home</a></li>
+      <li><a href="/html/menu.html">Menu</a></li>
+      <li><a href="/html/about.html">About</a></li>
+      <li><a href="#" id="open-cart">Cart</a></li>
+      <li><a href="/html/login.html">Login</a></li>
+      <!-- Dark Mode -->
+      <div class="bx bx-moon" id="darkmode"></div>
+    </ul>
+  </header>
+
+  <script>
+    document.getElementById('open-cart').addEventListener('click', function () {
+      document.getElementById('sidebar').classList.remove('hidden');
+      document.getElementById('sidebar').classList.remove('translate-y-full');
+    });
+
+    document.getElementById('close-cart').addEventListener('click', function () {
+      document.getElementById('sidebar').classList.add('translate-y-full');
+      // Add a delay to hide the sidebar after the transition completes
+      setTimeout(function () {
+        document.getElementById('sidebar').classList.add('hidden');
+      }, 300);
+    });
+  </script>
+
+  <!-- Copyright -->
+  <div class="copyright">
+    <p>©Pizza Mumbai All Right Reserved.</p>
+  </div>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="/Pizza.js"></script>
+</body>
+
+</html>

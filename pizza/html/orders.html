@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Mumbai</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap">
+  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="stylesheet" href="/Pizza.css">
+  <link rel="stylesheet" href="/css/mycart.css">
+
+  <!-- <link rel="stylesheet" href="/mycart.css"> -->
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <a href="/Pizza.html" class="logo">Pizza Mumbai</a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navbar">
+      <li><a href="/Pizza.html">Home</a></li>
+      <li><a href="/html/menu.html">Menu</a></li>
+      <li><a href="/html/about.html">About</a></li>
+      <li><a href="/html/cart.html">Cart</a></li>
+      <li><a href="/html/login.html">Login</a></li>
+      <!-- Dark Mode -->
+      <div class="bx bx-moon" id="darkmode"></div>
+    </ul>
+  </header>
+
+  <!--Heading code-->
+  <div class="ml-6 h-screen pt-20 flex flex-col items-center justify-center">
+    <h1 class="textclr mb-10 text-center text-2xl mb-4 text-4xl tracking-tight md:text-5xl lg:text-6xl">
+      We are currently closed! Please try again later.</h1>
+    <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Visit our menu and
+      go get your self a delicious pizza!</p>
+
+    <div class="inline-flex content-center flex items-center btncss">
+      <button class="orderpage mt-6 w-full rounded-md py-1.5 font-medium " id="orderButton"><a href="/Pizza.html"
+          class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white colorbtn rounded-lg focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+          Home
+          <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 5h12m0 0L9 1m4 4L9 9" />
+          </svg>
+        </a></button>
+      <button class="orderpage mt-6 w-full rounded-md py-1.5 font-medium text-blue-50" id="orderButton"><a
+          href="/html/menu.html"
+          class="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-white colorbtn rounded-lg focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+          Menu
+          <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 5h12m0 0L9 1m4 4L9 9" />
+          </svg>
+        </a></button>
+    </div>
+  </div>
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="contact-box">
+      <h3>Pizza Mumbai</h3>
+      <span>Connect With Us</span>
+      <div class="social">
+        <a href="#"><i class='bx bxl-facebook'></i></a>
+        <a href="#"><i class='bx bxl-twitter'></i></a>
+        <a href="#"><i class='bx bxl-instagram'></i></a>
+      </div>
+    </div>
+    <div class="contact-box">
+      <h3>Menu Links</h3>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#services">Service</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </div>
+    <div class="contact-box">
+      <h3>Quick Links</h3>
+      <li><a href="#Contact">Contact</a></li>
+      <li><a href="#Privacy Policy">Privacy Policy</a></li>
+      <li><a href="#Disclaimer">Disclaimer</a></li>
+      <li><a href="#Terms Of Use">Terms Of Use</a></li>
+    </div>
+    <div class="contact-box address">
+      <h3>Contact</h3>
+      <i class='bx bxs-map'><span>2994 La fontaine, H2K 2Z5, Montreal, QC, Canada</span></i>
+      <i class='bx bxs-phone'><span>+514-665-6575</span></i>
+      <i class='bx bxs-envelope'><span>contact@PizzaMumbai.com</span></i>
+    </div>
+  </section>
+
+
+
+  <footer class="copyright">
+    <p>©Pizza Mumbai All Right Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="text/javascript" src="/js/main.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="/mycart.js"></script>
+
+  <script>
+    // Function to toggle the visibility of the cart
+    function toggleCart() {
+      var cart = document.getElementById('cart');
+      cart.classList.toggle('hidden');
+    }
+  </script>
+  <script>
+    document.getElementById('open-cart').addEventListener('click', function () {
+      document.getElementById('sidebar').classList.remove('hidden');
+      document.getElementById('sidebar').classList.remove('translate-y-full');
+    });
+
+    document.getElementById('close-cart').addEventListener('click', function () {
+      document.getElementById('sidebar').classList.add('translate-y-full');
+      // Add a delay to hide the sidebar after the transition completes
+      setTimeout(function () {
+        document.getElementById('sidebar').classList.add('hidden');
+      }, 300);
+    });
+  </script>
+
+  <script>
+    let userCreds = JSON.parse(sessionStorage.getItem("user-creds"));
+    let userInfo = JSON.parse(sessionStorage.getItem("user-info"));
+  </script>
+</body>
+
+</html>
