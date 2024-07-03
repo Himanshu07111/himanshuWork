@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Pizza Mumbai</title>
+	<link rel="stylesheet" type="text/css" href="/css/login.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		integrity="sha512-LC+dw63Hzk1wbLyx4vBaN7NX9Qvvz7iWX1ya7emQr7LCk8txrBEW7I1EhnKIq1MBIeh5CezVsVj2t0drQ6aLtw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap">
+	<link rel="stylesheet" href="/Pizza.css">
+	<link rel="stylesheet" href="/css/login.css">
+	<link rel="stylesheet" href="/css/loginn.css">
+</head>
+
+<body>
+	<!-- Navbar -->
+	<header>
+		<a href="/Pizza.html" class="logo">Pizza Mumbai</a>
+		<div class="bx bx-menu" id="menu-icon"></div>
+
+		<ul class="navbar">
+			<li><a href="/Pizza.html">Home</a></li>
+			<li><a href="/html/menu.html">Menu</a></li>
+			<li><a href="/html/about.html">About</a></li>
+			<li><a href="/html/cart.html">Cart</a></li>
+			<li><a href="/html/login.html">Login</a></li>
+			<!-- Dark Mode -->
+			<div class="bx bx-moon" id="darkmode"></div>
+		</ul>
+	</header>
+
+	<div class="container">
+		<div class="img">
+			<img src="/img/pizza2.png">
+		</div>
+		<img class="wave" src="/img/wave (2)3.png">
+		<div class="login-content">
+			<form id="mainForm" action="index.html">
+				<img src="/img/pizzacircle.png">
+				<h2 class="title">REGISTER Now!</h2>
+
+				<div class="input-div one">
+					<div class="i">
+						<i class="fas fa-user"></i>
+					</div>
+					<div class="div">
+						<h5>Name</h5>
+						<input type="text" id="inputName" class="input">
+					</div>
+				</div>
+				<div class="input-div one">
+					<div class="i">
+						<i class="fas fa-user"></i>
+					</div>
+					<div class="div">
+						<h5>Email</h5>
+						<input type="text" id="inputEmail" class="input">
+					</div>
+				</div>
+				<div class="input-div pass">
+					<div class="i">
+						<i class="fas fa-lock"></i>
+					</div>
+					<div class="div">
+						<h5>Password</h5>
+						<input type="password" id="inputPassword" class="input">
+					</div>
+				</div>
+				<button type="submit" class="btn">Create account</button>
+				<a href="/html/login.html"><button type="button" class="btn">Login</button></a>
+
+			</form>
+		</div>
+	</div>
+
+
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+		import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+		import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
+
+		// Firebase configuration
+		const firebaseConfig = {
+			apiKey: "AIzaSyDFzztNzpQAaAZddW418bzTzENCloOXNl4",
+			authDomain: "pizza-mumbai.firebaseapp.com",
+			databaseURL: "https://pizza-mumbai-default-rtdb.firebaseio.com",
+			projectId: "pizza-mumbai",
+			storageBucket: "pizza-mumbai.appspot.com",
+			messagingSenderId: "659206077957",
+			appId: "1:659206077957:web:c4ac6b9ef141df7c3be66c"
+		};
+
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const db = getDatabase();
+		const auth = getAuth(app);
+
+		let inputName = document.getElementById('inputName');
+		let inputEmail = document.getElementById('inputEmail');
+		let inputPassword = document.getElementById('inputPassword');
+		let mainForm = document.getElementById('mainForm');
+
+		let registerUser = evt => {
+			evt.preventDefault();
+
+			createUserWithEmailAndPassword(auth, inputEmail.value, inputPassword.value)
+				.then((Credentials) => {
+					set(ref(db, 'UserAuthList/' + Credentials.user.uid), {
+						firstname: inputName.value
+					})
+					alert("Woah! Account created successfully! login Now");
+					// console.log(Credentials);
+				})
+			// .catch((error)=>{
+			//     alert(error.message);
+			//     console.log(error.code);
+			//     console.log(error.message);
+			// })
+
+		}
+
+		mainForm.addEventListener('submit', registerUser);
+	</script>
+	<script>
+		document.getElementById('open-cart').addEventListener('click', function () {
+			document.getElementById('sidebar').classList.remove('hidden');
+			document.getElementById('sidebar').classList.remove('translate-y-full');
+		});
+
+		document.getElementById('close-cart').addEventListener('click', function () {
+			document.getElementById('sidebar').classList.add('translate-y-full');
+			// Add a delay to hide the sidebar after the transition completes
+			setTimeout(function () {
+				document.getElementById('sidebar').classList.add('hidden');
+			}, 300);
+		});
+	</script>
+
+	<script type="text/javascript" src="/js/main.js"></script>>
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<script src="/Pizza.js"></script>
+</body>
+
+</html>

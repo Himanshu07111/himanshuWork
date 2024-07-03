@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Mumbai</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap">
+  <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="/css/manu.css">
+  <script type="module" src="/js/review.js"></script>
+  <link rel="stylesheet" href="/css/sidebar.css"> <!-- Add this line for your custom sidebar styles -->
+  <script src="/js/manu.js"></script>
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <a href="/Pizza.html" class="logo">Pizza Mumbai</a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navbar">
+      <li><a href="/Pizza.html">Home</a></li>
+      <li><a href="/html/menu.html">Menu</a></li>
+      <li><a href="/html/about.html">About</a></li>
+      <li><a href="/html/cart.html">Cart</a></li>
+      <li><a href="/html/login.html">Login</a></li>
+      <!-- Dark Mode -->
+      <div class="bx bx-moon" id="darkmode"></div>
+    </ul>
+  </header>
+
+  <section class="text-gray-600 body-font overflow-hidden">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="lg:w-4/5 mx-auto flex flex-wrap">
+        <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded"
+          src="https://www.dominos.com.au/ManagedAssets/AU/product/P443/AU_P443_en_hero_8598.png?v504620759">
+        <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+          <h2 class="text-sm title-font text-gray-500 tracking-widest">Today's Special</h2>
+          <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">Meat lover - Pepperoni & Ham</h1>
+          <div class="flex mb-4">
+            <span class=" flex items-center">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" class="colr w-4 h-4 " viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" class="colr w-4 h-4 " viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" class="colr w-4 h-4 " viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2" class="colr w-4 h-4 " viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="colr w-4 h-4 " viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                </path>
+              </svg>
+              <span class="text-gray-600 ml-3">231 Reviews</span>
+            </span>
+            <span class="flex ml-3 pl-3 py-2 border-l-2 border-gray-200 space-x-2s">
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="social w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="social w-5 h-5" viewBox="0 0 24 24">
+                  <path
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                  </path>
+                </svg>
+              </a>
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="social w-5 h-5" viewBox="0 0 24 24">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                  </path>
+                </svg>
+              </a>
+            </span>
+          </div>
+          <p class="leading-relaxed">Our Meat Lover's Pizza is a true feast for carnivores, artfully combining rich ham,
+            spicy pepperoni, and a medley of fresh veggies like bell peppers, onions, and mushrooms. Each slice offers a
+            harmonious blend of smoky, tangy flavors, perfectly complemented by melted mozzarella and a robust tomato
+            sauce, all atop our classic, hand-tossed dough. This pizza is a delightful journey of textures and tastes,
+            sure to satisfy any meat lover's cravings..</p>
+          <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
+            <div class="flex ml-6 items-center">
+              <span class="mr-3">Size</span>
+              <div class="relative">
+                <select id="sizeSelect"
+                  class="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10">
+                  <option style=" font-weight: bold;" value="op">Choose Pizza!</option>
+                  <option value="op1">Small</option>
+                  <option value="op2">Medium</option>
+                  <option value="op3">Large</option>
+                  <option value="op4">X-Large</option>
+                </select>
+                <span
+                  class="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    class="w-4 h-4" viewBox="0 0 24 24">
+                    <path d="M6 9l6 6 6-6"></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="flex">
+            <span id="pricetext" class="title-font font-medium text-2xl text-gray-900">$00.00</span>
+            <button id="buyNowBtn"
+              class="btnmanu flex ml-auto text-white border-0 py-2 px-6 focus:outline-none  rounded"><a href="#">Add to
+                Cart</a></button>
+            <button
+              class="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                viewBox="0 0 24 24">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z">
+                </path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap -m-4">
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="https://www.dominos.com.au/ManagedAssets/AU/product/P454/AU_P454_en_hero_10451.png?v-1755792505">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">VEGETERIAN LIGHT</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">VEGGIE SUPREME<a href="/html/orders.html"><button
+                  type="button"
+                  class=" text-white bg-red-700 hover:bg-yellow-500 inline-flex focus:ring-4 focus:ring-red-300 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center inline-flex items-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  <svg class="w-3.5 h-3.5 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 18 21">
+                    <path
+                      d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+                  </svg>
+                  Order!
+                </button></a></h2>
+            <div>
+              <select id="price"
+                class="bg-gray-50 text-gray-900 text-sm rounded-lg block dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 hover:text-gray-500 ">
+                <option style=" font-weight: bold;" selected>Choose a price $</option>
+                <option value="sml">Small 18$</option>
+                <option value="md">Medium 22$</option>
+                <option value="lrg">Large 26$</option>
+                <option value="fam">Family Deal 30$</option>
+              </select>
+            </div>
+            <!-- <p class="mt-1">$16.00</p> -->
+
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="https://www.dominos.com.au/ManagedAssets/AU/product/P025/AU_P025_en_hero_4055.jpg?v687172778">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CHICKEN DELIGHT</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">BBQ CHICKEN PIZZA<a
+                href="/html/orders.html"><button type="button"
+                  class="text-white bg-red-700 hover:bg-yellow-500 inline-flex focus:ring-4 focus:ring-red-300 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center inline-flex items-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  <svg class="w-3.5 h-3.5 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 18 21">
+                    <path
+                      d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+                  </svg>
+                  Order!
+                </button></a></h2>
+            <div>
+              <select id="price"
+                class="bg-gray-50 text-gray-900 text-sm rounded-lg block dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 hover:text-gray-500 ">
+                <option selected><strong>Choose a price $</strong></option>
+                <option value="sml">Small 18$</option>
+                <option value="md">Medium 22$</option>
+                <option value="lrg">Large 26$</option>
+                <option value="fam">Family Deal 30$</option>
+              </select>
+            </div>
+            <!-- <p class="mt-1">$16.00</p> -->
+
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlexfOzX1c6w3o1sxY2iWmNAB9C-An1_hX_dgSs8vt1t51Y2uPU-o9282ZJSGVrZkn7pw&usqp=CAU">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">SPICY VEGETERIAN</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">SPICY VEGGIE PIZZA<a
+                href="/html/orders.html"><button type="button"
+                  class="text-white bg-red-700 hover:bg-yellow-500 inline-flex focus:ring-4 focus:ring-red-300 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center inline-flex items-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  <svg class="w-3.5 h-3.5 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 18 21">
+                    <path
+                      d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+                  </svg>
+                  Order!
+                </button></a></h2>
+            <div>
+              <select id="price"
+                class="bg-gray-50 text-gray-900 text-sm rounded-lg block dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 hover:text-gray-500 ">
+                <option selected><strong>Choose a price $</strong></option>
+                <option value="sml">Small 18$</option>
+                <option value="md">Medium 22$</option>
+                <option value="lrg">Large 26$</option>
+                <option value="fam">Family Deal 30$</option>
+              </select>
+            </div>
+            <!-- <p class="mt-1">$16.00</p> -->
+
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="https://cdn.scrippsnews.com/images/videos/x/1673286574_Zzt5eb.jpg">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">TROPICAL DELIGHT</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">HAIWAIIAN PIZZA<a href="/html/orders.html"><button
+                  type="button"
+                  class="text-white bg-red-700 hover:bg-yellow-500 inline-flex focus:ring-4 focus:ring-red-300 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center inline-flex items-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  <svg class="w-3.5 h-3.5 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 18 21">
+                    <path
+                      d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+                  </svg>
+                  Order!
+                </button></a></h2>
+            <div>
+              <select id="price"
+                class="bg-gray-50 text-gray-900 text-sm rounded-lg block dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 hover:text-gray-500 ">
+                <option selected><strong>Choose a price $</strong></option>
+                <option value="sml">Small 18$</option>
+                <option value="md">Medium 22$</option>
+                <option value="lrg">Large 26$</option>
+                <option value="fam">Family Deal 30$</option>
+              </select>
+            </div>
+            <!-- <p class="mt-1">$16.00</p> -->
+
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="https://www.dominos.com.au/ManagedAssets/AU/product/P280/AU_P280_en_hero_4245.jpg?v481897530">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">ITALIAN OVERLOAD</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">SMOKED PEPPERONI<a href="/html/orders.html"><button
+                  type="button"
+                  class="text-white bg-red-700 hover:bg-yellow-500 inline-flex focus:ring-4 focus:ring-red-300 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center inline-flex items-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  <svg class="w-3.5 h-3.5 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 18 21">
+                    <path
+                      d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+                  </svg>
+                  Order!
+                </button></a></h2>
+            <div>
+              <select id="price"
+                class="bg-gray-50 text-gray-900 text-sm rounded-lg block dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 hover:text-gray-500 ">
+                <option selected><strong>Choose a price $</strong></option>
+                <option value="sml">Small 18$</option>
+                <option value="md">Medium 22$</option>
+                <option value="lrg">Large 26$</option>
+                <option value="fam">Family Deal 30$</option>
+              </select>
+            </div>
+            <!-- <p class="mt-1">$16.00</p> -->
+
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="https://www.dominos.co.nz/ManagedAssets/NZ/product/P378/NZ_P378_en_hero_4048.jpg?v367368594">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">VEGAN DELUXE</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">VEGAN BBQ PIZZA<a href="/html/orders.html"><button
+                  type="button"
+                  class="text-white bg-red-700 hover:bg-yellow-500 inline-flex focus:ring-4 focus:ring-red-300 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center inline-flex items-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  <svg class="w-3.5 h-3.5 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 18 21">
+                    <path
+                      d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+                  </svg>
+                  Order!
+                </button></a></h2>
+            <div>
+              <select id="price"
+                class="bg-gray-50 text-gray-900 text-sm rounded-lg block dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 hover:text-gray-500 ">
+                <option selected><strong>Choose a price $</strong></option>
+                <option value="sml">Small 18$</option>
+                <option value="md">Medium 22$</option>
+                <option value="lrg">Large 26$</option>
+                <option value="fam">Family Deal 30$</option>
+              </select>
+            </div>
+            <!-- <p class="mt-1">$16.00</p> -->
+
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8FYs-Al0J1NOzK27U20PgN5VbEtnJP1p98aAW2DhSqThr2EM1Zd_SrFmstBzEEseiu8s&usqp=CAU">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">AVOCADO SUPREME</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">VEGAN AVOCADO <a href="/html/orders.html"><button
+                  type="button"
+                  class="text-white bg-red-700 hover:bg-yellow-500 inline-flex focus:ring-4 focus:ring-red-300 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center inline-flex items-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  <svg class="w-3.5 h-3.5 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 18 21">
+                    <path
+                      d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+                  </svg>
+                  Order!
+                </button></a></h2>
+            <div>
+              <select id="price"
+                class="bg-gray-50 text-gray-900 text-sm rounded-lg block dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 hover:text-gray-500 ">
+                <option selected><strong>Choose a price $</strong></option>
+                <option value="sml">Small 18$</option>
+                <option value="md">Medium 22$</option>
+                <option value="lrg">Large 26$</option>
+                <option value="fam">Family Deal 30$</option>
+              </select>
+            </div>
+            <!-- <p class="mt-1">$16.00</p> -->
+
+          </div>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+          <a class="block relative h-48 rounded overflow-hidden">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block"
+              src="https://www.dominos.co.nz/ManagedAssets/NZ/product/P399/NZ_P399_en_hero_9362.jpg?v-1599673837">
+          </a>
+          <div class="mt-4">
+            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">EL SCORCHO</h3>
+            <h2 class="text-gray-900 title-font text-lg font-medium">SPICE PIZZA<a href="/html/orders.html"><button
+                  type="button"
+                  class="text-white bg-red-700 hover:bg-yellow-500 inline-flex focus:ring-4 focus:ring-red-300 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center inline-flex items-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  <svg class="w-3.5 h-3.5 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 18 21">
+                    <path
+                      d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+                  </svg>
+                  Order!
+                </button></a></h2>
+            <div>
+              <select id="price"
+                class="bg-gray-50 text-gray-900 text-sm rounded-lg block dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 hover:text-gray-500 ">
+                <option selected><strong>Choose a price $</strong></option>
+                <option value="sml">Small 18$</option>
+                <option value="md">Medium 22$</option>
+                <option value="lrg">Large 26$</option>
+                <option value="fam">Family Deal 30$</option>
+              </select>
+            </div>
+            <!-- <p class="mt-1">$16.00</p> -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--testimonial review section-->
+
+  <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
+
+  <script type="module">
+    import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm'
+
+    const keenSlider = new KeenSlider(
+      '#keen-slider',
+      {
+        loop: true,
+        slides: {
+          origin: 'center',
+          perView: 1.25,
+          spacing: 16,
+        },
+        breakpoints: {
+          '(min-width: 1024px)': {
+            slides: {
+              origin: 'auto',
+              perView: 2.5,
+              spacing: 32,
+            },
+          },
+        },
+      },
+      []
+    )
+
+    const keenSliderPrevious = document.getElementById('keen-slider-previous')
+    const keenSliderNext = document.getElementById('keen-slider-next')
+
+    keenSliderPrevious.addEventListener('click', () => keenSlider.prev())
+    keenSliderNext.addEventListener('click', () => keenSlider.next())
+  </script>
+
+  <section class="bg-gray-50 border-orange-500">
+    <div class="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
+      <div class="max-w-7xl items-end justify-between sm:flex sm:pe-6 lg:pe-8">
+        <h2 class="max-w-xl text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+          Read trusted reviews from pizza lovers!
+        </h2>
+
+        <div class="mt-8 flex gap-4 lg:mt-0">
+          <button aria-label="Previous slide" id="keen-slider-previous"
+            class="rounded-full border border-rose-600 p-3 text-rose-600 transition hover:bg-red-500 hover:text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="h-5 w-5 rtl:rotate-180">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+            </svg>
+          </button>
+
+          <button aria-label="Next slide" id="keen-slider-next"
+            class="rounded-full border border-rose-600 p-3 text-rose-600 transition hover:bg-red-500  hover:text-white">
+            <svg class="h-5 w-5 rtl:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="-mx-6 mt-8 lg:col-span-2 lg:mx-0">
+        <div id="keen-slider" class="keen-slider">
+          <div class="keen-slider__slide">
+            <blockquote class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12">
+              <div>
+                <div class="flex gap-0.5 text-green-500">
+                  <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+
+                  <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+
+                  <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+
+                  <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+
+                  <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                </div>
+
+                <div class="mt-4">
+                  <p class="text-2xl font-bold text-rose-600 sm:text-3xl">Pizza like back home!</p>
+
+                  <p class="mt-4 leading-relaxed text-gray-700">
+                    The Hawaiian Pizza is a tropical treat! The combination of sweet pineapple and ham is balanced
+                    perfectly. Each slice brings a burst of flavor that takes me straight to paradise. It reminds me of
+                    back home, as i always say, movement melt in your mouth!
+                  </p>
+                </div>
+              </div>
+
+              <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                &mdash; James Yuos
+              </footer>
+            </blockquote>
+          </div>
+
+          <div class="keen-slider__slide">
+            <blockquote class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12">
+              <div>
+                <div class="flex gap-0.5 text-green-500">
+                  <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+
+                  <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+
+                  <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+
+                  <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+
+                  <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                </div>
+
+                <div class="mt-4">
+                  <p class="text-2xl font-bold text-rose-600 sm:text-3xl">Best pizza i've had!</p>
+
+                  <p class="mt-4 leading-relaxed text-gray-700">
+                    I'm a big fan of classic flavors, and the Smoked Pepperoni Pizza hits all the right notes. The smoky
+                    pepperoni is flavorful without being overpowering, and the crust is cooked to perfection. Definitely
+                    a must-try for pepperoni lovers
+                  </p>
+                </div>
+              </div>
+
+              <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                &mdash; Jessica Lyle
+              </footer>
+            </blockquote>
+          </div>
+
+          <div class="keen-slider__slide">
+            <blockquote class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12">
+              <div>
+                <div class="flex gap-0.5 text-green-500">
+                  <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+
+                  <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+
+                  <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+
+                  <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+
+                  <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                </div>
+
+                <div class="mt-4">
+                  <p class="text-2xl font-bold text-rose-600 sm:text-3xl">Melts in your mouth! 5/5</p>
+
+                  <p class="mt-4 leading-relaxed text-gray-700">
+                    The Vegan BBQ Pizza is simply outstanding! It's hard to believe it's all plant-based. The BBQ sauce
+                    is rich and tangy, and the vegan cheese is wonderfully melty. A total delight for vegans and
+                    non-vegans alike
+                  </p>
+                </div>
+              </div>
+
+              <footer class="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                &mdash; Damien Wong
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Copyright -->
+  <div class="copyright">
+    <p>©Pizza Mumbai All Right Reserved.</p>
+  </div>
+
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="/Pizza.js"></script>
+</body>
+
+</html>
